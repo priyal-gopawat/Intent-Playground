@@ -14,7 +14,7 @@
 - Send and receive data b/w activity using intent
 ​
 ### Application Previews :
-  Get video from [here](https://github.com/priyal-gopawat/Storage/blob/main/Intent%20Playground/Intent%20Playground.mp4)
+  Get video from [here](https://drive.google.com/file/d/1Gl3v7UFwAo6brJKxA6ctB04ZQQbPW-ky/view?usp=sharing)
 
 ​
 ### Download apk from [here](https://github.com/priyal-gopawat/Intent-Playground/releases/download/1.0/app-debug.apk)
