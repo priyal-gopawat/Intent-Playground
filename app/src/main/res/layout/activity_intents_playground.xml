@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Explicit Intent"
+        android:text="@string/explicit_intent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:onClick="openMainActivity"
-        android:text="Open Main Activity"
+        android:text="@string/open_main_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/explicitIntentTitle" />
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Implicit Intent"
+        android:text="@string/implicit_intent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
@@ -55,7 +55,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="16dp"
-        android:hint="Data"
+        android:hint="@string/data"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/implicitIntentTitle">
@@ -70,7 +70,7 @@
         android:id="@+id/intentTypeRGrp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/data">
@@ -79,19 +79,19 @@
             android:id="@+id/openWebpageRBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Open Webpage" />
+            android:text="@string/open_webpage" />
 
         <RadioButton
             android:id="@+id/dialNumberRBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dial number" />
+            android:text="@string/dial_number" />
 
         <RadioButton
             android:id="@+id/shareTextRBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Share text" />
+            android:text="@string/share_text" />
 
     </RadioGroup>
 
@@ -101,7 +101,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:onClick="sendImplicitIntent"
-        android:text="GO"
+        android:text="@string/go"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/intentTypeRGrp" />
@@ -123,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="Sending &amp; Receiving Data"
+        android:text="@string/sending_amp_receiving_data"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
@@ -135,7 +135,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:hint="Initial Count"
+        android:hint="@string/initial_count"
         app:layout_constraintEnd_toStartOf="@+id/sendDataBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sendDataTitle">
@@ -154,7 +154,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:onClick="sendData"
-        android:text="Send"
+        android:text="@string/send"
         app:layout_constraintBottom_toBottomOf="@+id/initialCounterEditText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/initialCounterEditText"
@@ -167,7 +167,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:text="@string/textView"
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/initialCounterEditText" />

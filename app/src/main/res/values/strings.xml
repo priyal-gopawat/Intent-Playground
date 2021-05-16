@@ -5,4 +5,16 @@
     <string name="zero">0</string>
     <string name="inc">+</string>
     <string name="send_back">SEND BACK</string>
+    <string name="explicit_intent">Explicit Intent</string>
+    <string name="open_main_activity">Open Main Activity</string>
+    <string name="implicit_intent">Implicit Intent</string>
+    <string name="data">Data</string>
+    <string name="open_webpage">Open Webpage</string>
+    <string name="dial_number">Dial number</string>
+    <string name="share_text">Share text</string>
+    <string name="go">GO</string>
+    <string name="sending_amp_receiving_data"><![CDATA[Sending & Receiving Data]]></string>
+    <string name="initial_count">Initial Count</string>
+    <string name="send">Send</string>
+    <string name="textView">TextView</string>
 </resources>
