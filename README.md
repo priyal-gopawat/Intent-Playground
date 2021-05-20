@@ -17,3 +17,4 @@
 
 ### Download apk from [here](https://github.com/priyal-gopawat/Intent-Playground/releases/download/1.0/app-debug.apk)
 ​
+Download apk from [here](https://github.com/priyal-gopawat/Intent-Playground/releases/download/1.0/app-debug.apk)
