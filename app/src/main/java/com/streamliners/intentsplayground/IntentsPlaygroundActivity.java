@@ -1,5 +1,6 @@
 package com.streamliners.intentsplayground;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +18,7 @@ public class IntentsPlaygroundActivity extends AppCompatActivity {
 
     private static final int REQUEST_COUNT = 0;
     ActivityIntentsPlaygroundBinding b;
+    private int receivedCount = 101;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +27,22 @@ public class IntentsPlaygroundActivity extends AppCompatActivity {
         setupLayout();
 
         setupHideErrorForEditText();
+
+        //receiving count from saved instance
+        if(savedInstanceState!=null){
+            if(receivedCount!=101){
+                b.result.setText(""+ receivedCount);
+                b.result.setVisibility(View.VISIBLE);
+            }
+        }
     }
 
+    // Saving count by saved instance
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.getInt(Constants.COUNT_VALUE, receivedCount);
+    }
 
     /**
      * Initial setup methods
@@ -136,10 +152,10 @@ public class IntentsPlaygroundActivity extends AppCompatActivity {
 
         if(requestCode==REQUEST_COUNT && resultCode==RESULT_OK){
             //Get data
-            int count = data.getIntExtra(Constants.FINAL_COUNT, Integer.MIN_VALUE);
+            receivedCount = data.getIntExtra(Constants.FINAL_COUNT, Integer.MIN_VALUE);
 
             //Show data
-            b.result.setText("Final Count Received : " + count);
+            b.result.setText("Final Count Received : " + receivedCount);
             b.result.setVisibility(View.VISIBLE);
         }
     }

@@ -1,9 +1,11 @@
 package com.streamliners.intentsplayground;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Toast;
 
@@ -23,6 +25,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(b.getRoot());
 
         getInitialCount();
+
+        if(savedInstanceState!=null){
+            qty = savedInstanceState.getInt(Constants.COUNTER,0);
+            b.qty.setText(""+qty);
+        }
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(Constants.COUNTER,qty);
     }
 
     /**
